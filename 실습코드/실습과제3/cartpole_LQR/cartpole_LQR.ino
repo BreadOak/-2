@@ -34,7 +34,6 @@ unsigned char Send_Count = 1;
 float Sensor, pwm;
 float rad, deg_show;
 
-float max_cur = 1.2;      // [A]
 float max_vol = 12;       // [V] 
 float bit_res = pow(2,8); // PWM resolution 0~255 8bit
 
@@ -79,13 +78,16 @@ float ADC2deg(float sensor)
 }
 
 /**************************************************************************
-  Function : ADC -> rad
+Function : ADC -> rad
 **************************************************************************/
 float angle_count(float sensor)
 {
+  // Fill in the Missing Code
   static float deg;
-  deg = (UpPos - sensor) * 360 / 1024.0;
-  angle = (deg * PI) / 180.0;
+  deg = ;
+  angle = ;
+  // Fill in the Missing Code
+  
   return angle;
 }
 
