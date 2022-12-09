@@ -104,7 +104,7 @@ for i = T
     u = (max_vol/bit_res)*double(pwm+10);
 
     % simulation
-    [t,S_list] = ode45(@(t,x_state_ini)InvertedPendulum(t,x_state_ini,u), tspan, state_ini);
+    [t,S_list] = ode45(@(t,x_state_ini)InvertedPendulum(t,x_state_ini,u,A,B), tspan, state_ini);
     state_ini = S_list(end,(1:4)).';
 end
 
